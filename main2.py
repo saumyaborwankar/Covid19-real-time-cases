@@ -69,10 +69,10 @@ for i in dict_for_10k.keys():
         number_diff.append(i)
 dict_diff={diff_bw_100and10k[i]:number_diff[i] for i in range(len(number_diff))}
 
-print("The answer for the 1st question is {}".format(dict_country_num_name[dict_diff[min(diff_bw_100and10k)]]) )
-print("The answer to the 2nd question is {}".format(min(diff_bw_100and10k)+1))
-print("The answer for the 3rd question is {}".format(dict_country_num_name[dict_diff[max(diff_bw_100and10k)]]) )
-print("The answer to the 4th question is {}".format(max(diff_bw_100and10k)+1))
+print("The country that went from 100 to 1k cases the fastest is {}".format(dict_country_num_name[dict_diff[min(diff_bw_100and10k)]]) )
+print("The number of days it took for {} to get from 100 to 1k is {}".format(dict_country_num_name[dict_diff[min(diff_bw_100and10k)]]),min(diff_bw_100and10k)+1))
+print("The country that took the most time to go from 100 to 1k cases {}".format(dict_country_num_name[dict_diff[max(diff_bw_100and10k)]]) )
+print("The number of days it took for {} to get from 100 to 1k is {}".format(dict_country_num_name[dict_diff[max(diff_bw_100and10k)]]) ,max(diff_bw_100and10k)+1))
 
 
 ######################## PART 2 #######################
@@ -151,12 +151,12 @@ q5,q6=CalculatePerCapita('2020-2-10')
 q7,q8=CalculatePerCapita('2020-3-10')
 q9,q10=CalculatePerCapita('2020-4-10')
 
-print("The answer for 5th question is {}".format(q5))
-print("The answer for 6th question is {}".format(q6))
-print("The answer for 7th question is {}".format(q7))
-print("The answer for 8th question is {}".format(q8))
-print("The answer for 9th question is {}".format(q9))
-print("The answer for 10th question is {}".format(q10))
+print("The country with the highest per capita infection on Feb 10 2020 is {}".format(q5))
+print("The value is {}".format(q6))
+print("The country with the highest per capita infection on March 10 2020 is {}".format(q7))
+print("The value is {}".format(q8))
+print("The country with the highest per capita infection on April 10 2020 is {}".format(q9))
+print("The value is {}".format(q10))
 
 
 
